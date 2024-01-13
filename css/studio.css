@@ -432,7 +432,6 @@ img {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-top: 16px;
 }
 .social-link,
 .footer-link {
