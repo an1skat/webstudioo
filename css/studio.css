@@ -367,16 +367,13 @@ img {
 }
 .what-we-doing-ul-item {
   flex-basis: calc((100% - 60px) / 3);
-}
-.what-we-doing-ul-item::after {
-  content: "Десктопні додатки";
-  padding-top: 27px;
-  display: inline-block;
-  width: 370px;
-  height: 70px;
-  background-color: rgba(47, 48, 58, 0.8);
   position: relative;
-  top: -70px;
+}
+.what-we-doing-name {
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+  position: absolute;
+  bottom: 0;
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -384,12 +381,7 @@ img {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
-}
-.what-we-doing-ul-item:nth-child(2)::after {
-  content: "Мобільні додатки";
-}
-.what-we-doing-ul-item:nth-child(3)::after {
-  content: "Дизайнерські рішення";
+  padding: 27px 0;
 }
 .what-we-doing-title,
 .our-team-title {
