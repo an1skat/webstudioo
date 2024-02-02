@@ -17,23 +17,23 @@ document.addEventListener("keydown", function (e) {
     toggleModal();
   }
 });
-const inputs = [document.getElementById('input1'), document.getElementById('input2'), document.getElementById('input3')];
-const svgs = [document.getElementById('svg1'), document.getElementById('svg2'), document.getElementById('svg3')];
+// const inputs = [document.getElementById('input1'), document.getElementById('input2'), document.getElementById('input3')];
+// const svgs = [document.getElementById('svg1'), document.getElementById('svg2'), document.getElementById('svg3')];
 
-inputs.forEach((input, index) => {
-  input.addEventListener('focus', () => {
-    changeSvgColor(svgs[index]);
-  });
+// inputs.forEach((input, index) => {
+//   input.addEventListener('focus', () => {
+//     changeSvgColor(svgs[index]);
+//   });
 
-  input.addEventListener('blur', () => {
-    resetSvgColor(svgs[index]);
-  });
-});
+//   input.addEventListener('blur', () => {
+//     resetSvgColor(svgs[index]);
+//   });
+// });
 
-function changeSvgColor(svgElement) {
-  svgElement.style.fill = 'var(--accent-color)';
-}
+// function changeSvgColor(svgElement) {
+//   svgElement.style.fill = 'var(--accent-color)';
+// }
 
-function resetSvgColor(svgElement) {
-  svgElement.style.fill = '#000';
-}
+// function resetSvgColor(svgElement) {
+//   svgElement.style.fill = '#000';
+// }

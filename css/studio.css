@@ -7,10 +7,6 @@
 body {
   font-family: "Roboto";
 }
-/* ::-webkit-scrollbar {
-  width: 0px;
-  background: rgba(255, 255, 255, 0);
-} */
 h1,
 h2,
 h3,
@@ -490,6 +486,7 @@ img {
   border: none;
   background-color: transparent;
   border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 8px;
   right: 8px;
@@ -517,12 +514,13 @@ img {
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.6px;
+  text-align: center; 
 }
 .popup-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 .popup-input-label {
   color: #757575;
@@ -542,14 +540,19 @@ img {
   padding: 11px 42px;
   margin-top: 4px;
 }
-.popup-input:focus {
+.popup-input:focus,
+.popup-input:hover {
   outline: 1px solid var(--accent-color);
 }
 .popup-input-label > svg {
   position: absolute;
   left: 12px;
-  top: 46%;
+  top: 50%;
   fill: #212121;
+}
+.popup-input-label:focus-within > svg,
+.popup-input-label:hover > svg {
+  fill: var(--accent-color);
 }
 .popup-input::placeholder {
   color: rgba(117, 117, 117, 0.5);
@@ -563,6 +566,7 @@ img {
 }
 .textarea {
   padding: 11px 12px;
+  resize: none;
 }
 .checkbox-container {
   display: flex;
