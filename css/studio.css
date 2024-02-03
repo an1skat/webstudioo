@@ -56,27 +56,23 @@ img {
   margin: 0 auto;
   padding: 0 15px;
 }
-.current-link,
-.portfolio-current-link {
+.current-link {
   color: var(--accent-color);
 }
-.current-link::before,
-.portfolio-current-link::before {
+.current-link::before {
   content: "";
   position: absolute;
   display: inline-block;
   border-bottom: 4px solid var(--accent-color);
   border-radius: 2px;
-  width: 44.28px;
-  top: 75px;
-}
-.portfolio-current-link::before {
-  width: 72.2px;
+  width: 100%;
+  top: 44px;
 }
 
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header > .container {
   display: flex;
@@ -102,6 +98,9 @@ img {
 .header-svg {
   fill: #757575;
   transition: 0.5s;
+}
+.nav-item-link {
+  position: relative;
 }
 .nav-item-link,
 .contacts-item-link {
