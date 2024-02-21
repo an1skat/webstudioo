@@ -471,6 +471,8 @@ img {
   transform: translate(-50%, -50%);
   padding: 40px;
   width: 528px;
+  opacity: 1;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popup-overlay {
   height: 100vh;
@@ -480,9 +482,11 @@ img {
   top: 0;
   left: 0;
   z-index: 9998;
+  opacity: 1;
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-hidden {
-  display: none;
+  opacity: 0;
   pointer-events: none;
 }
 .no-scroll {
