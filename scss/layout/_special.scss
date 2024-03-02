@@ -1,0 +1,49 @@
+.special {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.special-ul {
+  display: flex;
+  gap: 30px;
+}
+.special-ul-item {
+  font-size: 14px;
+  color: $main-text-color;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  flex-basis: calc((100% - 90px) / 4);
+
+  &::before {
+    content: "";
+    display: inline-block;
+    background-color: #f5f4fa;
+    background-repeat: no-repeat;
+    background-image: url("../images/antenna.svg");
+    width: 270px;
+    height: 120px;
+    background-position: center;
+    border-radius: 4px;
+  }
+  &:nth-child(2)::before {
+    background-image: url("../images/clock.svg");
+  }
+  &:nth-child(3)::before {
+    background-image: url("../images/diagram.svg");
+  }
+  &:nth-child(4)::before {
+    background-image: url("../images/astronaut.svg");
+  }
+}
+.special-ul-item-title {
+  font-size: 14px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+.special-ul-item-signature {
+  color: $text-color-2;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.42px;
+  text-transform: none;
+}
