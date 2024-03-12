@@ -3,37 +3,37 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.our-team-title {
+.our-team__title {
   text-align: center;
   font-size: 36px;
   letter-spacing: 1.08px;
   margin-bottom: 50px;
 }
-.our-team-ul {
+.our-team__list {
   display: flex;
   gap: 30px;
   text-align: center;
 }
-.our-team-ul-item {
+.our-team__item {
   background-color: #fff;
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
   box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
     0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
-.our-team-ul-item-img {
+.our-team__img {
   width: 270px;
   height: 260px;
   margin-bottom: 30px;
 }
-.our-team-ul-item-name,
-.our-team-ul-item-profession {
+.our-team__name,
+.our-team__profession {
   color: $main-text-color;
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.48px;
 }
-.our-team-ul-item-profession {
+.our-team__profession {
   margin-top: 10px;
   color: $text-color-2;
   font-weight: 400;

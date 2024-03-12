@@ -1,0 +1,14 @@
+.header__logo,
+.footer__logo {
+  margin-right: 93px;
+  font-family: Raleway;
+  font-size: 26px;
+  letter-spacing: 0.78px;
+}
+.header__logo--accent,
+.footer__logo--accent {
+  color: $accent-color;
+}
+.footer__logo {
+  color: #fff;
+}

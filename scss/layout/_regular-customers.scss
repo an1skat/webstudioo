@@ -3,7 +3,7 @@
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.regular-customers-title {
+.regular-customers__title {
   color: #212121;
   text-align: center;
   font-family: Roboto;
@@ -13,13 +13,13 @@
   line-height: normal;
   letter-spacing: 1.08px;
 }
-.regular-customers-ul {
+.regular-customers__list {
   display: flex;
   gap: 30px;
   justify-content: center;
   margin-top: 50px;
 }
-.regular-customers-link {
+.regular-customers__link {
   display: flex;
   align-items: center;
   width: 170px;
