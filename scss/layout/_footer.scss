@@ -27,12 +27,12 @@
     color: $accent-color;
   }
 }
-.footer__links,
-.form-footer {
+.footer-links,
+.footer-form {
   padding-top: 10px;
 }
-.footer__links-title,
-.footer__form-title {
+.footer-links__title,
+.footer-form__title {
   color: #fff;
   font-size: 14px;
   line-height: normal;
@@ -40,14 +40,14 @@
   text-transform: uppercase;
   padding-bottom: 20px;
 }
-.footer__form {
+.footer__form-btn {
   margin-left: 23px;
 }
-.footer__form-form {
+.footer-form__form {
   display: flex;
   gap: 12px;
 }
-.footer__form-input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -69,17 +69,10 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
-.footer__form-btn {
+.footer-form__btn {
   width: 200px;
   height: 50px;
-  background: $accent-color;
-  border: none;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.875;
   display: flex;
   align-items: center;
   justify-content: center;
