@@ -8,20 +8,18 @@
 .hero__title {
   color: #fff;
   text-align: center;
-  font-size: 44px;
+  @include title(44px, 1.36364, 2.64px, uppercase);
   font-weight: 900;
-  line-height: 1.36364;
-  letter-spacing: 2.64px;
-  text-transform: uppercase;
   margin-bottom: 30px;
 }
 .hero__button {
+  @extend %btn;
   display: block;
   padding: 10px 32px;
   border-radius: 4px;
   letter-spacing: 0.96px;
   margin: 0 auto;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opacity);
 
   &:hover,
   &:focus {

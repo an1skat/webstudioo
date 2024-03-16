@@ -6,7 +6,7 @@
   gap: 30px;
 }
 .what-we-doing__item {
-  flex-basis: calc((100% - 60px) / 3);
+  @include flex-basis(20px, 3);
   position: relative;
 }
 .what-we-doing__name {
@@ -16,16 +16,12 @@
   bottom: 0;
   color: #fff;
   text-align: center;
-  font-size: 14px;
+  @include title(14px, normal, 0.42px, uppercase);
   font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.42px;
-  text-transform: uppercase;
   padding: 27px 0;
 }
 .what-we-doing__title {
   text-align: center;
-  font-size: 36px;
-  letter-spacing: 1.08px;
+  @include title(36px, normal, 1.08px, none);
   margin-bottom: 50px;
 }

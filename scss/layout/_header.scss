@@ -9,7 +9,7 @@
     border-radius: 2px;
     width: 100%;
     top: 45px;
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(transform);
   }
 
   &:hover::before,
@@ -38,17 +38,16 @@
 }
 .contacts-list__svg {
   fill: #757575;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
 .nav__link {
   position: relative;
 }
 .nav__link,
 .contacts-list__link {
-  font-size: 14px;
+  @include title(14px, normal, 0.28px, none);
   font-weight: 500;
-  letter-spacing: 0.28px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(color);
 
   &:hover,
   &:focus {

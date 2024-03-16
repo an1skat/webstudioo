@@ -1,13 +1,12 @@
 .logo {
-  font-family: Raleway;
-  font-size: 26px;
-  letter-spacing: 0.78px;
-  color: #000;
+  @extend %logo;
   margin-right: 93px;
 }
 .logo__accent {
+  @extend %logo;
   color: $accent-color;
 }
 .footer__logo {
+  @extend %logo;
   color: #fff;
 }

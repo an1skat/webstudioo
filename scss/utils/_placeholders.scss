@@ -1,4 +1,4 @@
-.button {
+%btn {
     background: $accent-color;
     border: none;
     color: #fff;
@@ -6,4 +6,10 @@
     font-size: 16px;
     font-weight: 700;
     line-height: 1.875;
+}
+%logo {
+    font-family: Raleway;
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    color: #000;
 }

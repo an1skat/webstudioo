@@ -10,7 +10,7 @@
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
   width: 528px;
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(transform);
 }
 .overlay {
   height: 100vh;
@@ -21,7 +21,7 @@
   left: 0;
   z-index: 9998;
   opacity: 1;
-  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opactiy);
 
   .is-hidden {
     opacity: 0;
@@ -46,11 +46,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(outline);
 
   svg {
     fill: #000;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition(fill);
   }
 
   &:hover,
@@ -101,14 +101,14 @@
   left: 12px;
   top: 50%;
   fill: #212121;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(fill);
 }
 .popup__input {
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding: 11px 42px;
   margin-top: 4px;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(outline);
 
   &:hover,
   &:focus {
@@ -152,12 +152,13 @@
   }
 }
 .popup__button {
+  @extend %btn;
   display: block;
   padding: 10px 52px;
   font-family: inherit;
   letter-spacing: 0.96px;
   margin: 0 auto;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition(opacity);
 
   &:hover,
   &:focus {
