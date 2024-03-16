@@ -77,7 +77,7 @@
   gap: 10px;
   margin-top: 12px;
 }
-.popup__input-label {
+.popup__label {
   color: #757575;
   font-family: Roboto;
   font-size: 12px;
@@ -89,20 +89,19 @@
   flex-direction: column;
   position: relative;
 
-  svg {
-    position: absolute;
-    left: 12px;
-    top: 50%;
-    fill: #212121;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-
   &:focus-within,
   &:hover {
-    svg {
+    .popup__svg {
       fill: $accent-color;
     }
   }
+}
+.popup__svg {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  fill: #212121;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popup__input {
   border-radius: 4px;
@@ -152,7 +151,7 @@
     color: $accent-color;
   }
 }
-.popup__submit-btn {
+.popup__button {
   display: block;
   padding: 10px 52px;
   font-family: inherit;
