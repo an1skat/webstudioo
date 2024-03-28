@@ -1,6 +1,17 @@
 .logo {
   @extend %logo;
-  margin-right: 93px;
+  font-style: normal;
+  width: 134px;
+  height: 28px;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 145px;
+    height: 31px;
+    margin-right: 93px;
+  }
 }
 .logo__accent {
   @extend %logo;

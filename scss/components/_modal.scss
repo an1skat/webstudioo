@@ -9,8 +9,12 @@
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  width: 528px;
+  width: 450px;
   @include transition(transform);
+
+  @media screen and (min-width: 1440px) {;
+    width: 528px;
+  }
 }
 .overlay {
   height: 100vh;
@@ -79,7 +83,6 @@
 }
 .popup__label {
   color: #757575;
-  font-family: Roboto;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -140,12 +143,16 @@
 }
 .popup__policy-label {
   color: #757575;
-  font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
+  letter-spacing: 0.36px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  letter-spacing: 0.42px;
+
+  @media screen and (min-width: 1440px) {
+    font-size: 14px;
+    letter-spacing: 0.42px;
+  }
 
   a {
     color: $accent-color;

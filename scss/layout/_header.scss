@@ -8,8 +8,14 @@
     border-bottom: 4px solid $accent-color;
     border-radius: 2px;
     width: 100%;
-    top: 45px;
     @include transition(transform);
+
+    @media screen and (min-width: 768px) {
+      bottom: -40px;
+    }
+    @media screen and (min-width: 1440px) {
+      bottom: -34px;
+    }
   }
 
   &:hover::before,
@@ -18,23 +24,41 @@
   }
 }
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding: 16px 0;
   border-bottom: 1px solid #ececec;
+
+  @media screen and (min-width: 768px) {
+    padding: 26px 0;
+  }
 
   .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1440px)  {
+      justify-content: center;
+    }
   }
 }
 
 .nav__list,
 .contacts-list {
-  display: flex;
-  gap: 50px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 50px;
+  }
 }
 .contacts-list {
   margin-left: auto;
+  flex-direction: column;
+  gap: 10px;
+
+  @media screen and (min-width: 1440px) {
+    flex-direction: row;
+  }
 }
 .contacts-list__svg {
   fill: #757575;
@@ -63,4 +87,9 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+.burger {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }

@@ -12,18 +12,41 @@
   display: flex;
   gap: 30px;
   text-align: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1440px) {
+    flex-wrap: nowrap;
+  }
 }
 .our-team__item {
   background-color: #fff;
   padding-bottom: 30px;
   border-radius: 0 0 4px 4px;
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  @include flex-basis(30px, 1);
+
+  @media screen and (min-width: 768px) {
+    @include flex-basis(30px, 2);
+  }
+  @media screen and (min-width: 1440px) {
+    @include flex-basis(30px, 4);
+  }
 }
 .our-team__img {
-  width: 270px;
-  height: 260px;
+  width: 450px;
+  height: 460px;
   margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: 354px;
+    height: 374px;
+  }
+  @media screen and (min-width: 1440px) {
+    width: 270px;
+    height: 260px;
+  }
 }
 .our-team__name,
 .our-team__profession {

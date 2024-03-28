@@ -5,11 +5,20 @@
 .special__list {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 1440px) {
+    flex-wrap: nowrap;
+  }
 }
 .special__item {
   @include title(14px, normal, 0.42px, uppercase);
   color: $main-text-color;
-  @include flex-basis(30px, 4);
+  @include flex-basis(30px, 1);
+
+  @media screen and (min-width: 768px) {
+    @include flex-basis(30px, 2);
+  }
 
   &::before {
     content: "";
@@ -18,8 +27,13 @@
     background-repeat: no-repeat;
     width: 270px;
     height: 120px;
-    background-position: center;
+    background-position: right;
     border-radius: 4px;
+
+
+    @media screen and (min-width: 768px) {
+      background-position: center;
+    }
   }
   @for $i from 1 through 4 {
     &:nth-child(#{$i})::before {

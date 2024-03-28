@@ -1,16 +1,28 @@
 .hero {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/bg.png) no-repeat;
-  background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding: 70px 0;
+  background-size: 480px 400px;
+
+  @media screen and (min-width: 768px){
+    padding: 100px 0;
+    background-size: 768px 400px;
+  }
+  @media screen and (min-width: 1440px) {
+    background-size: cover;
+    padding: 200px 0;
+  }
 }
 .hero__title {
   color: #fff;
   text-align: center;
-  @include title(44px, 1.36364, 2.64px, uppercase);
+  @include title(26px, 1.61538, 1.56px, uppercase);
   font-weight: 900;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1440px) {
+    @include title(44px, 1.36364, 2.64px, uppercase);
+  }
 }
 .hero__button {
   @extend %btn;
