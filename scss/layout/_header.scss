@@ -11,10 +11,10 @@
     @include transition(transform);
 
     @media screen and (min-width: 768px) {
-      bottom: -40px;
+      bottom: -35px;
     }
-    @media screen and (min-width: 1440px) {
-      bottom: -34px;
+    @media screen and (min-width: 1200px) {
+      bottom: -33px;
     }
   }
 
@@ -26,9 +26,13 @@
 .header {
   padding: 16px 0;
   border-bottom: 1px solid #ececec;
+  position: relative;
 
   @media screen and (min-width: 768px) {
-    padding: 26px 0;
+    padding: 21px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 25px 0;
   }
 
   .container {
@@ -36,7 +40,7 @@
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (min-width: 1440px)  {
+    @media screen and (min-width: 1200px)  {
       justify-content: center;
     }
   }
@@ -56,7 +60,7 @@
   flex-direction: column;
   gap: 10px;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
   }
 }

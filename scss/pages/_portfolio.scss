@@ -5,8 +5,14 @@
 .filters {
   display: flex;
   gap: 8px;
-  justify-content: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
 }
 .filters__btn {
   border: none;
@@ -30,6 +36,9 @@
       0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
+  &:nth-child(1) {
+    padding: 6px 25px;
+  }
 }
 .filters__btn--active {
   background: $accent-color;
@@ -37,16 +46,20 @@
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
-.filters__btn--padding {
-  padding: 6px 25px;
-}
 .projects__list {
   display: flex;
   gap: 30px;
   flex-wrap: wrap;
 }
 .projects__item {
-  @include flex-basis(30px, 3);
+  flex-basis: 100%;
+
+  @media screen and (min-width: 768px) {
+    @include flex-basis(30px, 2);
+  }
+  @media screen and (min-width: 1200px) {
+    @include flex-basis(30px, 3);
+  }
 }
 .projects__content {
   display: block;

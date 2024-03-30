@@ -7,14 +7,14 @@
   gap: 30px;
   flex-wrap: wrap;
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     flex-wrap: nowrap;
   }
 }
 .special__item {
   @include title(14px, normal, 0.42px, uppercase);
   color: $main-text-color;
-  @include flex-basis(30px, 1);
+  flex-basis: 100%;
 
   @media screen and (min-width: 768px) {
     @include flex-basis(30px, 2);
@@ -53,6 +53,11 @@
   font-size: 14px;
   margin-bottom: 10px;
   margin-top: 30px;
+  text-align: center;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
 }
 .special__signature {
   color: $text-color-2;

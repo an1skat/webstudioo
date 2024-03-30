@@ -5,7 +5,7 @@
 
   .container {
     display: flex;
-    gap: 70px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -15,7 +15,7 @@
       flex-direction: row;
       align-items: flex-start;
     }
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1200px) {
       flex-wrap: nowrap;
       justify-content: space-between;
       flex-direction: row;
@@ -31,7 +31,7 @@
     margin-right: 0;
     margin-bottom: 20px;
   }
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     align-items: flex-start;
   }
 }
@@ -55,7 +55,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (min-width: 768px) and (max-width: 1440px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
 }
@@ -64,6 +64,10 @@
   color: #fff;
   @include title(14px, normal, 0.42px, uppercase);
   padding-bottom: 20px;
+
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    text-align: center;
+  }
 }
 .footer__form-btn {
   margin-left: 23px;
@@ -73,7 +77,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  @media screen and (min-width: 768px) and (max-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     flex-direction: row;
     gap: 12px;
   }
@@ -89,7 +93,7 @@
   padding-left: 16px;
   @include transition(border-color);
 
-  @media screen and (min-width: 1440px) {
+  @media screen and (min-width: 1200px) {
     width: 358px;
   }
 
