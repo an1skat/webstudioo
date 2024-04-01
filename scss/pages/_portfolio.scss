@@ -20,7 +20,7 @@
   font-family: Roboto;
   border-radius: 4px;
   padding: 6px 22px;
-  background-color: #fff;
+  background-color: #f5f4fa;
   color: $main-text-color;
   font-weight: 500;
   line-height: 1.625;
@@ -53,6 +53,7 @@
 }
 .projects__item {
   flex-basis: 100%;
+  border: 1px solid #EEE;
 
   @media screen and (min-width: 768px) {
     @include flex-basis(30px, 2);
@@ -73,7 +74,7 @@
 
   &:hover .projects__hover-content,
   &:focus .projects__hover-content {
-    transform: translateY(-100%);
+    transform: translateY(0);
   }
 }
 .projects__title {
@@ -104,10 +105,12 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  top: 0;
   color: #fff;
   padding: 63px 24px;
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.54px;
   @include transition(transform);
+  transform: translateY(100%);
 }

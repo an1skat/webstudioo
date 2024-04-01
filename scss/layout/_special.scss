@@ -24,16 +24,15 @@
     content: "";
     display: inline-block;
     background-color: #f5f4fa;
+    //background-color: #737a80;
     background-repeat: no-repeat;
-    width: 270px;
+    width: 100%;
     height: 120px;
-    background-position: right;
     border-radius: 4px;
+    background-position: center;
 
 
-    @media screen and (min-width: 768px) {
-      background-position: center;
-    }
+
   }
   @for $i from 1 through 4 {
     &:nth-child(#{$i})::before {
