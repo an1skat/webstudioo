@@ -102,7 +102,7 @@
   }
 }
 .menu {
-  transform: translateX(300vw);
+  transform: translateX(-300vw);
   position: absolute;
   @include transition(transform);
   background-color: #fff;
